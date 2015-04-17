@@ -10,7 +10,6 @@ layout: default
   <div class="col-md-13 aside3-title">
     <h2>{{ page.title }}</h2>
     <span class="label date">{{ page.date | date:"%Y年%m月%d日" }}</span>
-    <span class="label category">{{ page.category}}</span>
     {% for tag in page.tags %}
       <span class="label tag">{{ tag }}</span>
     {% endfor %}
