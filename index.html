@@ -3,13 +3,38 @@ layout: default
 title: 大漠留香的博客
 ---
 
-<h2>{{ page.title }}</h2>
 <p>最新文章</p>
+
 <ul>
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li>
-      {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	  <p>{{ post.excerpt }}</p>
-	</li>
+      <p> {{ post.date | date_to_string }} <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"> {{ post.title }} </a> </p> {{ post.url }}
+    </li>
   {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+<!-- 分页代码 -->
+  {% if paginator.page == 1 %}
+    <span class="previous_page_button inactive_button"> 上一页 </span>
+  {% else %}
+    <a class="previous_page_button active_button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+  {% endif %}
+  
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  
+  {% if paginator.page == paginator.total_pages%}
+    <span> 下一页 </span>
+  {% else %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+  {% endif %}
+{% endif %}
+

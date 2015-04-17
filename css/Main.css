@@ -1,0 +1,37 @@
+body {background-color: rgb(234, 230, 209)}
+
+.previous_page_button { color: #ff0000; }
+
+header {
+  margin: 0;
+  padding: 15px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background: #2980b9;
+  box-shadow: 1px 0px 2px rgba(0,0,0,0.75);
+  height: 100%;
+  max-height: 106px;
+  min-height: 106px;
+  }
+  
+h1.header_title {
+  font-size: 40px;
+  line-height: 54px;
+  font-family: "Copse","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #f3f3f3;
+  text-shadow: 0px 2px 0px rgba(35,87,150,0.2);
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.header_subtitle {
+  color: #d8d8d8;
+  text-shadow: rgba(0,0,0,0.2) 0 1px 0;
+  font-size: 16px;
+  margin: 0px;
+}
