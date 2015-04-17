@@ -8,7 +8,7 @@ title: 大漠留香的博客
 <ul>
   {% for post in paginator.posts %}
     <li>
-      <p> {{ post.date | date_to_string }} <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"> {{ post.title }} </a> </p> {{ post.url }}
+      <p> {{ post.date | date_to_string }} <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"> {{ post.title }} </a> </p>
     </li>
   {% endfor %}
 </ul>
