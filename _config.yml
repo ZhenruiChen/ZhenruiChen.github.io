@@ -5,6 +5,5 @@ description:    风吹流水，大漠留香
 markdown:       kramdown
 timezone:       Asia/Shanghai
 permalink:      /:year/:month/:day/:title
-paginate:       10
+paginate:       1
 paginate_path:  "page:num"
-baseurl:        /

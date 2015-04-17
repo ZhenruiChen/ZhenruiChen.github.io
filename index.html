@@ -8,7 +8,7 @@ title: 大漠留香的博客
 <ul>
   {% for post in paginator.posts %}
     <li>
-      <p> {{ post.date | date_to_string }} <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"> {{ post.title }} </a> </p>
+      <p> {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a> </p>
     </li>
   {% endfor %}
 </ul>
@@ -18,23 +18,23 @@ title: 大漠留香的博客
   {% if paginator.page == 1 %}
     <span class="previous_page_button inactive_button"> 上一页 </span>
   {% else %}
-    <a class="previous_page_button active_button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+    <a class="previous_page_button active_button" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">上一页</a>
   {% endif %}
   
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <span class="active">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      <a href="{{ site.baseurl }}/index.html">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
   
   {% if paginator.page == paginator.total_pages%}
     <span> 下一页 </span>
   {% else %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">下一页</a>
   {% endif %}
 {% endif %}
 
