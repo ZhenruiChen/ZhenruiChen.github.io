@@ -7,4 +7,4 @@ timezone:       Asia/Shanghai
 permalink:      /:year/:month/:day/:title
 paginate:       10
 paginate_path:  "page:num"
-baseurl:        /
+baseurl:        /ZhenruiChen.github.io
