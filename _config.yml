@@ -1,6 +1,8 @@
 # Site settings
 title:          Zhenrui Chen' Blog
 description:    风吹流水，大漠留香
+# markdown:       redcarpet
+markdown:       kramdown
 
 timezone:       Asia/Shanghai
 permalink:      /:year/:month/:day/:title
