@@ -2,8 +2,11 @@
 title:          Zhenrui Chen' Blog
 description:    风吹流水，大漠留香
 
-markdown:       kramdown
 timezone:       Asia/Shanghai
 permalink:      /:year/:month/:day/:title
 paginate:       10
 paginate_path:  "page:num"
+
+homepage:       首页
+website:        网站建设
+aboutme:        关于
