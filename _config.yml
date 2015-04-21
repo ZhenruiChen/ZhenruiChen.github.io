@@ -1,8 +1,9 @@
 # Site settings
+markdown:       kramdown
+
 title:          Zhenrui Chen' Blog
 description:    风吹流水，大漠留香
-# markdown:       redcarpet
-markdown:       kramdown
+url:            http://zhenruichen.com/
 
 timezone:       Asia/Shanghai
 permalink:      /:year/:month/:day/:title
@@ -12,3 +13,5 @@ paginate_path:  "page:num"
 homepage:       首页
 website:        网站建设
 aboutme:        关于
+
+excerpt_separator:  ""
