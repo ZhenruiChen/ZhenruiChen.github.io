@@ -11,7 +11,8 @@ paginate:       10
 paginate_path:  "page:num"
 
 homepage:       首页
-website:        网站建设
-aboutme:        关于
+update:         记录
+feed:           订阅
+about:          关于
 
 excerpt_separator:  ""
