@@ -81,17 +81,18 @@ p.header_subtitle {
 
 .wrapper {
   display: block;
-}
-
-.container {
   background-color: rgb(255, 255, 255);
-  margin: 20px 50px;
+  margin: 20px 20px;
   padding: 20px;
   width: 70%;
-  min-width: 600px;
+  min-width: 700px;
   border: 2px solid #a1a1a1;
   border-radius:10px;
   box-shadow:2px 2px 3px #aaaaaa;
+}
+
+.container#post-page {
+  margin-bottom: 40px;
 }
 
 .label {
@@ -99,14 +100,13 @@ p.header_subtitle {
   margin: 0 5px;
 }
 
-.date {
+#date {
   color: #000000;
-  margin-left: 0;
-  margin-right: 20px;
 }
 
-.tag {
+#tag {
   color: #0033FF;
+  margin-left: 20px;
+  margin-right: 0;
 }
-
 

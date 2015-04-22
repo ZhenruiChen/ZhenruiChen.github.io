@@ -11,7 +11,7 @@ paginate:       10
 paginate_path:  "page:num"
 
 homepage:       首页
-update:         记录
+update:         功能
 feed:           订阅
 about:          关于
 

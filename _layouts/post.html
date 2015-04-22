@@ -1,17 +1,18 @@
 ---
-layout: default
+layout:    default
+comments:  true
 ---
 
 <script type="text/javascript"
  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-<div class="container post-page">
-  <div class="col-md-13 aside3-title">
-    <h1>{{ page.title }}</h1>
-    <span class="label date">{{ page.date | date:"%Y年%m月%d日" }}</span>
+<div class="container" id="post-page">
+  <div class="post-head">
+    <h1 id="post-title">{{ page.title }}</h1>
+    <span class="label" id="date">{{ page.date | date:"%Y年%m月%d日" }}</span>
     {% for tag in page.tags %}
-      <span class="label tag">{{ tag }}</span>
+      <span class="label" id="tag">{{ tag }}</span>
     {% endfor %}
   </div>
   <hr>
