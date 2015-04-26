@@ -5,12 +5,15 @@
           box-sizing: border-box;
 }
 
+a { 
+  text-decoration: none
+} 
 
 body {
   margin: 0;
   background-color: rgb(234, 230, 209);
   font-family: "Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
+}
 
 .topbutton {
   font-weight: bold;
@@ -24,7 +27,6 @@ body {
 header {
   margin: 0;
   padding: 15px 0;
-  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
