@@ -10,9 +10,17 @@ permalink:      /:year/:month/:day/:title
 paginate:       10
 paginate_path:  "page:num"
 
-homepage:       首页
-update:         功能
-feed:           订阅
-about:          关于
+homepage:
+  name:         首页
+  url:          /index.html
+update:
+  name:         功能
+  url:          /update.html
+feed:
+  name:         订阅
+  url:          /feed.xml
+about:
+  name:         关于
+  url:          /about.html
 
 excerpt_separator:  ""

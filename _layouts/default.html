@@ -1,51 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>
-    {% if page.title == site.title %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} | {{ site.title }}
-    {% endif %}
-  </title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="/css/default.css" type="text/css" charset="utf-8"/>
-  <link rel="stylesheet" href="/css/markdown.css" type="text/css" charset="utf-8"/>
-</head>
-<body>
-  <header>
-    <h1 class="header_title"> {{ site.title }} </h1>
-    <p class="header_subtitle"> {{ site.description }} </p>
-  </header>
-  
-  <div class="banner">
-    <span id="logo"><span class="octicon octicon-mark-github"></span></span>
-    <a href="{{ site.baseurl }}/index.html" class="button"><span class="topbutton"> {{ site.homepage }} </span></a>
-    <a href="{{ site.baseurl }}/update.html" class="button"><span class="topbutton"> {{ site.update }} </span></a>
-    <a href="{{ site.baseurl }}/feed.xml" target="_blank" class="button"><span class="topbutton"> {{ site.feed }} </span></a>
-  </div>
-  
-  <div class="wrapper">
-    {{ content }}
+
+  {% include head.html %}
+  {% include google_analytics.html %}
+
+  <body>
+    <header>
+      <h1 class="header_title"> {{ site.title }} </h1>
+      <p class="header_subtitle"> {{ site.description }} </p>
+    </header>
     
-    {% if page.comments %}
-      <div class="container" id="disqus_thread"></div>
-      <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES * * */
-      var disqus_shortname = 'zhenruichen';
+    <div class="banner">
+      <span id="logo"><span class="octicon octicon-mark-github"></span></span>
+      <a href="{{ site.baseurl }}{{ site.homepage.url }}" class="button"><span class="topbutton"> {{ site.homepage.name }} </span></a>
+      <a href="{{ site.baseurl }}{{ site.update.url }}" class="button"><span class="topbutton"> {{ site.update.name }} </span></a>
+      <a href="{{ site.baseurl }}{{ site.feed.url }}" target="_blank" class="button"><span class="topbutton"> {{ site.feed.name }} </span></a>
+    </div>
     
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    {% endif %}
-  </div>
-  
-</body>
-</html>
+    <div class="wrapper">
+      {{ content }}
+      {% include disqus.html %}
+    </div>
+  </body>
+
+ </html>
 
 
