@@ -1,5 +1,5 @@
 # Site settings
-markdown:       kramdown
+markdown:       redcarpet
 
 title:          Zhenrui Chen' Blog
 description:    风吹流水，大漠留香
