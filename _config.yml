@@ -1,5 +1,8 @@
 # Site settings
-markdown:       redcarpet
+# markdown:       redcarpet
+markdown:       kramdown
+kramdown:
+  input:        GFM
 
 title:          Zhenrui Chen' Blog
 description:    风吹流水，大漠留香
@@ -22,5 +25,7 @@ feed:
 about:
   name:         关于
   url:          /about.html
-
+  
 excerpt_separator:  ""
+
+
