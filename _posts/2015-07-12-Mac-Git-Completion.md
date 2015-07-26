@@ -1,7 +1,9 @@
 ---
-layout: post
-tags:  git Mac
-title: Mac 上配置 git 自动补全
+layout:      post
+title:       Mac 配置 git 自动补全
+tags:        技术 git Mac
+keywords:    git Mac 自动补全
+description: Mac 上使用 git 时，自动补全无法使用。通过配置，实现了 git 的自动补全。
 ---
 
 Mac 上使用 git 时，自动补全无法使用。需要借助 [Homebrew][] 来下载必要的文件并且重新配置。[Homebrew] 可以轻松地下载 OS X 系统缺失的文件。
@@ -50,13 +52,13 @@ git clone https://github.com/git/git.git
 cp git/contrib/completion/git-completion.bash ~/.git-completion.bash
 ```
 
-在 ~/. profile 中添加下面的语句，terminal 在启动时会依次遍历下面四个文件。
+在 ~/.profile 中添加下面的语句，terminal 在启动时会依次遍历下面四个文件 /etc/profile, ~/.bash_profile, ~/.bash_login, ~/.profile.
 
 ```
 source ~/.git-completion.bash
 ```
 
-使上面的配置生效
+手动使上面的配置生效
 
 ```
 source ~/. profile
