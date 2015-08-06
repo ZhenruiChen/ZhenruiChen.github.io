@@ -1,7 +1,7 @@
 ---
 layout: post
 tags:  网站建设
-title: 网站功能和优化记录
+title: 功能优化记录
 ---
 
 ## 准备增加的功能
