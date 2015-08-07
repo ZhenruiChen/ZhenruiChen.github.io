@@ -1,0 +1,27 @@
+---
+layout:    default
+comments:  false
+---
+
+<div class="container" id="archives-page">
+	<div class="archives-list">
+		{% assign archives_year = null %}
+
+		{% for post in site.posts %}
+			{% capture post_year %}
+				{{ post.date | date: '%Y' }}
+			{% endcapture %}
+
+			{% if archives_year != post_year %}
+				{% assign archives_year = post_year %}
+				<h2 id="archives-year">{{ archives_year }}</h2>
+			{% endif %}
+
+			<li id="archives-article"><p>
+				<span class="article-date"> {{ post.date | date: "%m-%d" }} </span>
+				<a class="article-title" href="{{post.url}}"> {{ post.title }} </a>
+			</p></li>
+			
+		{% endfor %}
+	</div>
+</div>

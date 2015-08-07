@@ -7,9 +7,10 @@ comments:  false
 <h2>最新文章</h2>
 <ul>
   {% for post in paginator.posts %}
-    <li>
-      <p> {{ post.date | date: "%Y-%m-%d" }} <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a> </p>
-    </li>
+    <li><p>
+			<span class="article-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
+			<a class="article-title" href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
+		</p></li>
   {% endfor %}
 </ul>
 

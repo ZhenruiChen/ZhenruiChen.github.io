@@ -112,3 +112,12 @@ p.header_subtitle {
   margin-right: 0;
 }
 
+span.article-date {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+li#archives-article {
+  margin-left: 20px;
+  margin-right: 0;
+}
