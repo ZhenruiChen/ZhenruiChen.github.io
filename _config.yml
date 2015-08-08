@@ -19,6 +19,9 @@ homepage:
 update:
   name:         功能
   url:          /update.html
+tags-all:
+  name:         标签
+  url:          /tags.html 
 archives:
   name:         归档
   url:          /archives.html 

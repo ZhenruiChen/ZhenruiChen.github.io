@@ -1,0 +1,22 @@
+---
+layout:    default
+comments:  false
+---
+
+<div class="container">
+  {% for t in site.tags %}
+    {% assign tag = t[0] %}
+    
+    <h2> {{ tag }} </h2>
+    <hr>
+    
+    <ul>
+    {% for post in site.tags[tag] %}
+      <li id="post-list">
+        <span class="post-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
+        <a class="post-title" href="{{ post.url }}"> {{ post.title }} </a>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

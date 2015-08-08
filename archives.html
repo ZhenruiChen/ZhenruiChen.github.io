@@ -3,25 +3,31 @@ layout:    default
 comments:  false
 ---
 
-<div class="container" id="archives-page">
-	<div class="archives-list">
-		{% assign archives_year = null %}
+<div class="container">
+  {% assign display_time = '' %}
+  
+  {% for post in site.posts %}
+    {% assign post_time = post.date | date: "%Y-%m" %}
+    
+    {% if display_time != post_time %}
+      {% if display_time == '' %}
+        <ul>
+      {% endif %}
+      
+      {% assign display_time = post_time %}
+      </ul>
+      <h2> {{ display_time }} </h2>
+      <hr>
+      <ul>
+    {% endif %}
+    
+    <li id="post-list">
+      <span class="post-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
+      <a class="post-title" href="{{ post.url }}"> {{ post.title }} </a>
+    </li>
 
-		{% for post in site.posts %}
-			{% capture post_year %}
-				{{ post.date | date: '%Y' }}
-			{% endcapture %}
-
-			{% if archives_year != post_year %}
-				{% assign archives_year = post_year %}
-				<h2 id="archives-year">{{ archives_year }}</h2>
-			{% endif %}
-
-			<li id="archives-article"><p>
-				<span class="article-date"> {{ post.date | date: "%m-%d" }} </span>
-				<a class="article-title" href="{{post.url}}"> {{ post.title }} </a>
-			</p></li>
-			
-		{% endfor %}
-	</div>
+  {% endfor %}
+  
+  </ul>
 </div>
+

@@ -4,18 +4,18 @@ comments:  false
 ---
 
 <div class="container">
-<h2>最新文章</h2>
-<ul>
+  <h2>最新文章</h2>
+  <hr>
+  <ul>
   {% for post in paginator.posts %}
-    <li><p>
-			<span class="article-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
-			<a class="article-title" href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
-		</p></li>
+    <li id="post-list">
+      <span class="post-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
+      <a class="post-title" href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
+    </li>
   {% endfor %}
 </ul>
 
 {% if paginator.total_pages > 1 %}
-<!-- 分页代码 -->
   {% if paginator.page == 1 %}
     <span class="previous_page_button inactive_button"> 上一页 </span>
   {% else %}
