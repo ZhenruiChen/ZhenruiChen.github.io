@@ -9,22 +9,27 @@
       <h1 class="header_title"> {{ site.title }} </h1>
       <p class="header_subtitle"> {{ site.description }} </p>
     </header>
-    
+
     <div class="banner">
-      <span id="logo"><span class="octicon octicon-mark-github"></span></span>
-      <a href="{{ site.baseurl }}{{ site.homepage.url }}" class="button"><span class="topbutton"> {{ site.homepage.name }} </span></a>
-      <a href="{{ site.baseurl }}{{ site.archives.url }}" class="button"><span class="topbutton"> {{ site.archives.name }} </span></a>
-      <a href="{{ site.baseurl }}{{ site.tags-all.url }}" class="button"><span class="topbutton"> {{ site.tags-all.name }} </span></a>
-      <a href="{{ site.baseurl }}{{ site.update.url }}" class="button"><span class="topbutton"> {{ site.update.name }} </span></a>
-      <a href="{{ site.baseurl }}{{ site.feed.url }}" target="_blank" class="button"><span class="topbutton"> {{ site.feed.name }} </span></a>
+      <div class="wrapper">
+        <span id="logo"><span class="octicon octicon-mark-github"></span></span>
+        <a href="{{ site.baseurl }}{{ site.homepage.url }}" class="button"><span class="topbutton"> {{ site.homepage.name }} </span></a>
+        <a href="{{ site.baseurl }}{{ site.archives.url }}" class="button"><span class="topbutton"> {{ site.archives.name }} </span></a>
+        <a href="{{ site.baseurl }}{{ site.tags-all.url }}" class="button"><span class="topbutton"> {{ site.tags-all.name }} </span></a>
+        <a href="{{ site.baseurl }}{{ site.update.url }}" class="button"><span class="topbutton"> {{ site.update.name }} </span></a>
+        <a href="{{ site.baseurl }}{{ site.feed.url }}" target="_blank" class="button"><span class="topbutton"> {{ site.feed.name }} </span></a>
+      </div>
     </div>
-    
-    <div class="wrapper">
-      {{ content }}
-      {% include disqus.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="left-page">
+          {{ content }}
+          {% include disqus.html %}
+        </div>
+        <div class="right-page"></div>
+      </div>
     </div>
   </body>
 
  </html>
-
-
