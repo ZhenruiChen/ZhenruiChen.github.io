@@ -88,12 +88,13 @@ p.header_subtitle {
 }
 
 .page-content {
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .wrapper {
     max-width: 1050px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 0px auto;
     overflow: hidden
 }
