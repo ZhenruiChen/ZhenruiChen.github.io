@@ -13,7 +13,7 @@ comments:  false
       <a class="post-title" href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
     </li>
   {% endfor %}
-</ul>
+  </ul>
 
 {% if paginator.total_pages > 1 %}
   {% if paginator.page == 1 %}
@@ -21,7 +21,7 @@ comments:  false
   {% else %}
     <a class="previous_page_button active_button" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">上一页</a>
   {% endif %}
-  
+
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <span class="active">{{ page }}</span>
@@ -31,7 +31,7 @@ comments:  false
       <a href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
-  
+
   {% if paginator.page == paginator.total_pages%}
     <span> 下一页 </span>
   {% else %}
