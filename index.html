@@ -6,14 +6,12 @@ comments:  false
 <div class="container">
   <h2>最新文章</h2>
   <hr>
-  <ul>
   {% for post in paginator.posts %}
-    <li id="post-list">
+    <div id="post-list">
       <span class="post-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
       <a class="post-title" href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
-    </li>
+    </div>
   {% endfor %}
-  </ul>
 
 {% if paginator.total_pages > 1 %}
   {% if paginator.page == 1 %}

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -116,35 +120,6 @@ p.header_subtitle {
     padding: 0 0 0 20px;
 }
 
-@media (max-width: 840px) {
-    ul {
-        padding-left: 20px;
-    }
-
-    .banner .button {
-        padding: 5px 3px;
-        margin: 6px 1px;
-    }
-
-    .wrapper {
-        padding: 0 2px;
-    }
-
-    .page-content {
-        margin: 2px 0px;
-    }
-
-    .left-page {
-        width: 100%;
-        padding: 4px;
-    }
-
-    .right-page {
-        width: 100%;
-        padding: 0;
-    }
-}
-
 .container#post-page {
     margin-bottom: 40px;
 }
@@ -172,4 +147,36 @@ span.post-date {
 
 div#post-list {
     line-height: 200%;
+}
+
+/* Settings for phone browsers. iPhone 4
+
+*/
+@media (max-width: 500px) {
+    ul {
+        padding-left: 20px;
+    }
+
+    .banner .button {
+        padding: 5px 3px;
+        margin: 6px 1px;
+    }
+
+    .wrapper {
+        padding: 0 2px;
+    }
+
+    .page-content {
+        margin: 2px 0px;
+    }
+
+    .left-page {
+        width: 100%;
+        padding: 4px;
+    }
+
+    .right-page {
+        width: 100%;
+        padding: 0;
+    }
 }

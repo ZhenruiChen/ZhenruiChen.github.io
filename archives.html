@@ -5,29 +5,20 @@ comments:  false
 
 <div class="container">
   {% assign display_time = '' %}
-  
+
   {% for post in site.posts %}
     {% assign post_time = post.date | date: "%Y-%m" %}
-    
+
     {% if display_time != post_time %}
-      {% if display_time == '' %}
-        <ul>
-      {% endif %}
-      
       {% assign display_time = post_time %}
-      </ul>
       <h2> {{ display_time }} </h2>
       <hr>
-      <ul>
     {% endif %}
-    
-    <li id="post-list">
+
+    <div id="post-list">
       <span class="post-date"> {{ post.date | date: "%Y-%m-%d" }} </span>
       <a class="post-title" href="{{ post.url }}"> {{ post.title }} </a>
-    </li>
+    </div>
 
   {% endfor %}
-  
-  </ul>
 </div>
-
