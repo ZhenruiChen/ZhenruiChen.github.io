@@ -104,9 +104,9 @@ p.header_subtitle {
 .left-page {
     display: block;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 0 20px;
     float: left;
-    max-width: 880px;
+    max-width: 960px;
     width: 75%;
     border: 2px solid #a1a1a1;
     border-radius:10px;
@@ -115,13 +115,12 @@ p.header_subtitle {
 
 .right-page {
     float: left;
-    min-width: 150px;
-    width: 25%;
+    width: 20%;
     padding: 0 0 0 20px;
 }
 
-.container#post-page {
-    margin-bottom: 40px;
+#disqus_thread {
+    margin-top: 20px;
 }
 
 .label {

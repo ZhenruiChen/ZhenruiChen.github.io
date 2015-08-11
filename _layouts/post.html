@@ -10,7 +10,11 @@ comments: true
 <div class="container" id="post-page">
   <div class="post-head">
     <h1 id="post-title">{{ page.title }}</h1>
-    <span class="label" id="date">{{ page.date | date:"%Y年%-m月%-d日" }}</span>
+    
+    {% if page.date %}
+      <span class="label" id="date">{{ page.date | date:"%Y年%-m月%-d日" }}</span>
+    {% endif %}
+    
     {% for tag in page.tags %}
       <span class="label" id="tag">{{ tag }}</span>
     {% endfor %}
