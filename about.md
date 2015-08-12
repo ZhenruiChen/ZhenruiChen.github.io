@@ -11,16 +11,16 @@ close-comments: true
 
 <img src="/images/qr.png" width="135" height="135">
 
-博主在别处：
+你还可以在其他地方找到博主
 
-<a href="https://github.com/ZhenruiChen">
+<a href="https://github.com/ZhenruiChen" target="_blank">
   <img class="icon" src="/images/github_icon.png" title="GitHub">
-</a><a href="https://www.linkedin.com/pub/zhenrui-chen/36/968/622">
+</a><a href="https://www.linkedin.com/pub/zhenrui-chen/36/968/622" target="_blank">
   <img class="icon" src="/images/linkedin_icon.png" title="LinkedIn">
-</a><a href="http://www.zhihu.com/people/chenzr08">
+</a><a href="http://www.zhihu.com/people/chenzr08" target="_blank">
   <img class="icon" src="/images/zhihu_icon.png" title="知乎">
-</a><a href="http://weibo.com/hidreamworld">
+</a><a href="http://weibo.com/hidreamworld" target="_blank">
   <img class="icon" src="/images/weibo_icon.png" title="微博">
-</a><a href="http://www.douban.com/people/48262291/">
+</a><a href="http://www.douban.com/people/48262291/" target="_blank">
   <img class="icon" src="/images/douban_icon.png" title="豆瓣">
 </a>
