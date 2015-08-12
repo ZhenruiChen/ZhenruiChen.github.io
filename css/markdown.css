@@ -26,6 +26,14 @@ h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, 
   font-size: inherit;
 }
 
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
 pre, code {
   font-size: 12px;
   font-family: Consolas, "Liberation Mono", Courier, monospace;

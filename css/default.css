@@ -104,7 +104,7 @@ p.header_subtitle {
 .left-page {
     display: block;
     background-color: rgb(255, 255, 255);
-    padding: 0 20px;
+    padding: 20px;
     float: left;
     max-width: 960px;
     width: 75%;
@@ -146,6 +146,11 @@ span.post-date {
 
 div#post-list {
     line-height: 200%;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
 }
 
 /* Settings for phone browsers. iPhone 4
