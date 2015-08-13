@@ -222,11 +222,11 @@ p.header_subtitle {
     margin-top: 20px;
 }
 
-.label#date {
-    color: #000000;
+.label#author {
+    margin-left: 10px;
 }
 
-.label#author {
+.label#tags {
     margin-left: 10px;
 }
 
@@ -310,6 +310,10 @@ div#post-list {
     }
     
     .label#link {
+        display: none;
+    }
+    
+    .label#author {
         display: none;
     }
 }

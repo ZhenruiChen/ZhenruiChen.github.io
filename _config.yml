@@ -7,7 +7,7 @@ kramdown:
 title:          Zhenrui Chen' Blog
 author:         Zhenrui Chen
 description:    风吹流水，大漠留香
-url:            http://zhenruichen.com/
+url:            http://zhenruichen.com
 
 timezone:       Asia/Shanghai
 paginate:       10
