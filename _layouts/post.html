@@ -1,6 +1,5 @@
 ---
 layout:   default
-comments: true
 ---
 
 <script type="text/javascript"
@@ -10,18 +9,36 @@ comments: true
 <div class="container" id="post-page">
   <div class="post-head">
     <h1 id="post-title">{{ page.title }}</h1>
-    
-    {% if page.date %}
-      <span class="label" id="date">{{ page.date | date:"%Y年%-m月%-d日" }}</span>
-    {% endif %}
-    
-    {% for tag in page.tags %}
-      <span class="label" id="tag">{{ tag }}</span>
-    {% endfor %}
+    <hr>
 
+    {% if page.hide-link != true %}
+      <span class="label" id="date">
+        {{ page.date | date:"%Y年%-m月%-d日" }}
+      </span>
+      
+      <span class="label" id="author">
+        <span>作者：</span>
+          <a href="{{ site.baseurl }}{{ site.about.url }}"> {{ site.author }} </a>
+        </span>
+      </span>
+      <br>
+      
+      <span class="label" id="tags">标签：
+        {% for tag in page.tags %}
+          <span id="tag-unit">{{ tag }}</span>
+        {% endfor %}
+      </span>
+      <br>
+
+      <span class="label" id="link">原文链接：
+        <a class="page-link" href="{{ site.baseurl }}{{ page.url }}"> {{ site.baseurl }}{{ page.url }} </a>
+        <br>
+      </span>
+      <br>
+    {% endif %}
   </div>
-  <hr>
-  <div>
+  
+  <div class="post-text">
     {{ content }}
   </div>
 </div>

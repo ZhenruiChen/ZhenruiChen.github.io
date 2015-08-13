@@ -70,6 +70,7 @@ ssserver -c /etc/shadowsocks.json
 ssserver -c /etc/shadowsocks.json -d start
 ssserver -c /etc/shadowsocks.json -d stop
 ```
+
 ## 客户端的配置
 
 Shadowsocks 在客户端的使用非常简单。下载对应的客户端程序，填入主机 IP 地址、端口号和密码。
@@ -83,6 +84,7 @@ Shadowsocks 在客户端的使用非常简单。下载对应的客户端程序�
 [Shadowsocks_iOS]: https://github.com/shadowsocks/shadowsocks-iOS/wiki/Help
 
 ## 参考文献
+
 [Shadowsocks 在 GitHub 上的官方介绍][Shadowsocks]  
 [使用Digital Ocean和shadowsocks来科学上网 | 咀嚼之味][jerryzou]
 
