@@ -34,4 +34,7 @@ feed:
 
 excerpt_separator:  ""
 
+# Gems
+gems:           [jekyll-paginate]
+
 
