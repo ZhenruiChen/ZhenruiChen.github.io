@@ -23,4 +23,6 @@ hide-link:      true
   <img class="icon" src="/images/icon/weibo_icon.png" title="微博">
 </a><a href="http://www.douban.com/people/48262291/" target="_blank">
   <img class="icon" src="/images/icon/douban_icon.png" title="豆瓣">
+</a><a href="http://homepage.zhenruichen.com/" target="_blank">
+  <img class="icon" src="/images/icon/scholar.png" title="学术主页">
 </a>
