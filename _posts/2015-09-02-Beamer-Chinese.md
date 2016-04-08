@@ -1,6 +1,6 @@
 ---
 layout:    post
-tags:      技术 Tex
+tags:      工具
 title:     Beamer 显示中文的模板
 keywords:  Beamer 显示中文 模板   
 description: Beamer 是 Tex 中制作演示文稿的一种文档类型，非常适合用于准备学术报告的演示文稿，或者符号和公式比较多的展示材料。随着 ctex 和 xeCJK 包的推出，在 Beamer 中使用中文已经非常容易。

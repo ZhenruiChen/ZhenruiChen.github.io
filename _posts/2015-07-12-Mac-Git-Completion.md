@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       Mac 配置 git 自动补全
-tags:        技术 git Mac
+tags:        工具
 keywords:    git Mac 自动补全
 description: Mac 上使用 git 时，自动补全无法使用。通过配置，实现了 git 的自动补全。
 ---

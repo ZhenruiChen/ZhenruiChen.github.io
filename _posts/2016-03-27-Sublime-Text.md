@@ -1,6 +1,6 @@
 ---
 layout:    post
-tags:      技术 Mac
+tags:      工具
 title:     Sublime Text 3 常用功能
 keywords:  Sublime Text plugins 插件
 description: Sublime Text 是一款跨平台的文本编辑器，通过数量众多的插件可以实现便捷的编辑和调试，比如 C++ 编译、Latex 编译等。

@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       DigitalOcean 配置 Shadowsocks 实现科学上网
-tags:        技术 科学上网 VPS
+tags:        工具
 keywords:    DigitalOcean Shadowsocks VPS
 description: 在 DigitalOcean 主机上配置 Shadowsocks
 ---
