@@ -65,6 +65,7 @@ Package Control: Remove Package
 2. 安装 Mac OSX 下的 PDF 软件 Skim. 可以通过 brew cask 或者直接在网站下载
 3. 设置 Skim 反向链接到 Sublime Text. Skim --> Preferences --> Sync --> Preset: Sublime Text.
 4. 在Sublime Text 中编辑 Latex 文件，使用 `Command + B` 进行编译和预览。
+5. 在 Skim 中浏览时，按住 Command+Shift 再点击，就可以跳转到 Latex 对应的语句。
 
 
 
