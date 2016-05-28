@@ -67,5 +67,14 @@ Package Control: Remove Package
 4. 在Sublime Text 中编辑 Latex 文件，使用 `Command + B` 进行编译和预览。
 5. 在 Skim 中浏览时，按住 Command+Shift 再点击，就可以跳转到 Latex 对应的语句。
 
+## 快捷键
+
++ `Command + D` 选中一个单词
++ `Command + L` 选中一行
++ `Shift + Command + L` : 同时编辑选中的多行
+
++ `Command + /` : 添加（或者取消）行注释
+
+
 
 
