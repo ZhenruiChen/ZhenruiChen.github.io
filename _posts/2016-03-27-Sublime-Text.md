@@ -68,12 +68,15 @@ Package Control: Remove Package
 5. 在 Skim 中浏览时，按住 Command+Shift 再点击，就可以跳转到 Latex 对应的语句。
 
 ## 快捷键
-
+### 编辑
 + `Command + D` 选中一个单词
 + `Command + L` 选中一行
 + `Shift + Command + L` : 同时编辑选中的多行
 
+### 编程
 + `Command + /` : 添加（或者取消）行注释
++ Ctrl+Alt+F: 格式化当前文件
++ ⌘+K, ⌘+F: 格式化选中的内容
 
 
 
