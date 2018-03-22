@@ -21,13 +21,14 @@ description: 在 DigitalOcean 主机上配置 Shadowsocks
 
 + 建立一个 Droplet. Droplet 的字面意思是液滴，在这里应该是指主机。根据网友博客中的建议，选择旧金山（San Francisco）的机房.操作系统选择 Ubuntu 14.04 LTS（LTS 指的是“Long Term Support”，有五年时间的技术支持）。如果要支持 IPv6 方式的科学上网，请勾选 IPv6 选项。为了方便配置，建议添加 SSH Key.
 
-+ 租用主机之后，可以查看主机的硬件配置和网络参数。最便宜的 $5/mo 套餐足以满足科学上网的需求，对应的硬件配置是 512 MB 的内存，20 GB 的 固态硬盘，每月 1000 GB 的流量。查看主机的 IP 地址，在后续配置时会用到。我租用的机房 IPv4 地址是 `104.236.135.215`，IPv6 地址是 `2604:a880:1:20::fa:9001`.
++ 租用主机之后，可以查看主机的硬件配置和网络参数。最便宜的 $5/mo 套餐足以满足科学上网的需求，对应的硬件配置是 512 MB 的内存，20 GB 的 固态硬盘，每月 1000 GB 的流量。查看主机的 IP 地址，在后续配置时会用到。
 
 + 连接到远程服务器，安装 Shadowsocks.
 
 ```
 ssh root@104.236.135.215
-apt-get update # 更新依赖的库文件
+export LC_ALL=C       # 修复语言配置
+apt-get update        # 更新依赖的库文件
 apt-get install python-pip
 pip install shadowsocks
 ```
