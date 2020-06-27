@@ -72,6 +72,10 @@ ssserver -c /etc/shadowsocks.json -d start
 ssserver -c /etc/shadowsocks.json -d stop
 ```
 
+### 遇到错误 `EVP_CIPHER_CTX_cleanup`
+
+http://blog.cuishifeng.cn/ss-cleanup.html
+
 ## 客户端的配置
 
 Shadowsocks 在客户端的使用非常简单。下载对应的客户端程序，填入主机 IP 地址、端口号和密码。
