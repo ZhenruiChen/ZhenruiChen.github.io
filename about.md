@@ -15,14 +15,12 @@ hide-link:      true
 
 <a href="https://github.com/ZhenruiChen" target="_blank">
   <img class="icon" src="/images/icon/github_icon.png" title="GitHub">
-</a><a href="https://www.linkedin.com/pub/zhenrui-chen/36/968/622" target="_blank">
+</a><a href="https://www.linkedin.com/in/zhenruichen/" target="_blank">
   <img class="icon" src="/images/icon/linkedin_icon.png" title="LinkedIn">
-</a><a href="http://www.zhihu.com/people/chenzr08" target="_blank">
+</a><a href="https://www.zhihu.com/people/zhenruichen" target="_blank">
   <img class="icon" src="/images/icon/zhihu_icon.png" title="知乎">
 </a><a href="http://weibo.com/hidreamworld" target="_blank">
   <img class="icon" src="/images/icon/weibo_icon.png" title="微博">
-</a><a href="http://www.douban.com/people/48262291/" target="_blank">
-  <img class="icon" src="/images/icon/douban_icon.png" title="豆瓣">
-</a><a href="http://homepage.zhenruichen.com/" target="_blank">
+</a><a href="https://scholar.google.com/citations?hl=en&user=S-hTGmMAAAAJ" target="_blank">
   <img class="icon" src="/images/icon/scholar.png" title="学术主页">
 </a>
